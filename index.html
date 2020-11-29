@@ -3,13 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 header">Weather Dashboard</div>
+            <div class="row">
+                <div id="CityList" class="col-sm-3">
+                    Search for a City:
+                    <input type="text" id="search-bar"><i class="fas fa-search"></i>
+                    <button type="submit" id="searchBtn">Search</button>
+                </div>
+            </div> 
+        <div class="col-sm-9"></div>
+        <div class="row"></div>
+       <!-- Row for Current Weather -->
+            <div class="col-sm-12">
+                <div class="card CurrentWeather" style="width: 100%;">
+                    <div class="card-body">
+                        <div id="city-name"></div>
+                        <div id="temp-div"></div>
+                        <div id="humidity-div"></div>
+                        <div id="wind-div"></div>
+                        <div id="UVIndex"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        <div class="row TitleFiveDay">
+            <!--Row to display title 5 day forecast-->
+            <div class="col-sm-12">5 Day Forecast:</div>
+                  </div>
+                <div class="row FiveDays">
+                 <!--Row for 5Days Weather-->
+                    <div class="col-sm-2.4 mx-2">
+                    <div class="Forecast-1" style="width: 100%;">
+                    <div class="card-body">
+                        <p id="Date1" class="card-title">Date</p>
+                        <p id="icon1"></p>
+                        <p id="Temp1" class="card-text">Temperature</p>
+                        <p id="Humidity1" class="card-text">Humidity</p>
+                    </div>
+                    </div>
+                    </div>
+                <div class="col-sm-2.4 mx-2">
+                <div class="Forecast-2" style="width: 100%;">
+                    <div class="card-body">
+                        <p id="Date2" class="card-title">Date</p>
+                        <p id="icon2"></p>
+                        <p id="Temp2" class="card-text">Temperature</p>
+                        <p id="Humidity2" class="card-text">Humidity</p>
+                    </div>
+                </div>
+                </div>
+             <div class="col-sm-2.4 mx-2">
+                <div class="Forecast-3" style="width: 100%;">
+                    <div class="card-body">
+                        <p id="Date3" class="card-title">Date</p>
+                        <p id="icon3"></p>
+                        <p id="Temp3" class="card-text">Temperature</p>
+                        <p id="Humidity3" class="card-text">Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-2.4 mx-2">
+           <div class="Forecast-4" style="width: 100%;">
+            <div class="card-body">
+            <p id="Date4" class="card-title">Date</p>
+            <p id="icon4"></p>
+            <p id="Temp4" class="card-text">Temperature</p>
+            <p id="Humidity4" class="card-text">Humidity</p>
+             </div>
+              </div>
+                </div>
+                <div class="col-sm-2.4 mx-2">
+                <div class="Forecast-5" style="width: 100%;">
+                <div class="card-body">
+                    <p id="Date5" class="card-title">Date</p>
+                    <p id="icon5"></p>
+                    <p id="Temp5" class="card-text">Temperature</p>
+                    <p id="Humidity5" class="card-text">Humidity</p>
+               </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+                            
+
+                         
 
 
+             
+</div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
