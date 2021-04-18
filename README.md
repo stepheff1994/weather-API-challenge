@@ -12,10 +12,6 @@ HTML, CSS and Javascript
 ![main page](./assets/images/weatherscreenshot.png)
 
 
-
-## Usage
-As mentioned above The Tech Blog A CMS-style blog site. This site is for developers, where developers can post their blog posts and comment on other user's posts as well.
-
     
 
 ## License
